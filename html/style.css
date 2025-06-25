@@ -1,0 +1,33 @@
+*,*:before,*:after{
+    box-sizing : border-box;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.whole{
+    position: relative;
+}
+
+.wrapper{
+    z-index: 1;
+    max-width: 960px;
+    margin: 0 auto; 
+    padding: 1%;
+}
+
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1920px; /* 根據影片原始寬度 */
+    height: auto;
+    min-height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
