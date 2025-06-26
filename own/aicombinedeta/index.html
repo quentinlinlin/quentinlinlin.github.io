@@ -1,23 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="img/x-icon.ico" type="image/x-icon"/>
-  <base target="_blank">
-  <title>AI生成背景圖</title>
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/x-icon.ico" type="image/x-icon"/>
+    <base target="_blank">
+    <title>AI生成主播 / 生成背景圖</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
 </head>
 <body>
   <div class="whole">
-    <video class="video-bg" autoplay muted loop playsinline preload="auto" poster="bk.png">
-      <source src="./img/Comp.webm" type="video/webm">
+    <div class="anounce m-none">本回使用的AI生成，僅使用於探索AI功能使用，若習得此技，欲商用，請詳讀各家AI生成使用規範喔！</div>  
+    <div class="top m-none"><a href="" target="_self">回到頭</a></div>  
+  <div class="wrapper">
+    
+  <!-- 文章大標以及前言開始 -->
+    <h1>AI生成主播 / 生成背景圖</h1>
+    <div class="m-none">
+    <h2>本篇有兩個主題，先介紹第一個：想像一個很難在大眾面前發言的人要在大眾面前發言有多困難，要是有個誰可以替代就好了。正好現在要讓AI生成出個主播也沒問題，於是就來試試看。本次需求為：</h2>
+    <ul class="describe">
+      <li>一位像主播的人在動嘴。</li>
+      <li>看起來自然。</li>
+    </ul>
+    <h3>於是survey了幾個，沒有查找app的。最後以<span> kreadoＡi </span>的產出結果為最符合需求的。
+  <!-- 文章大標以及前言結束 -->
+
+  <!-- 生成步驟說明開始 -->
+  <h4 id="a">kreadoＡi生成主播步驟</h4>
+  
+  <h3>1.<a href="https://www.kreadoai.com/ai/avatars">官網首頁</a>登入後，點擊左側“AI Avatar”，接著點選“Talking Photo”，接著點擊upload photo。原先上傳boxman，系統偵測不到人臉，所以請唐國師登場。</h3>
+  <img src="./img/step1.jpg" style="border: 1px solid rgb(208, 208, 208);">
+
+  <h3>2.會出現要什麼比例的畫布，選一個喜歡的。</h3>
+  <img src="./img/step2.jpg" style="border: 1px solid rgb(208, 208, 208);">
+
+  <h3>3.點選AI Motion，預覽ok後，可以點擊下載到本機。</h3>
+    <img src="./img/step3.jpg" style="border: 1px solid rgb(208, 208, 208);">
+    <p></p>
+    <img src="./img/step4.jpg" style="border: 1px solid rgb(208, 208, 208);">
+    <p></p>
+ 
+
+  <h3>4.成品如下，測試結果會比點擊右上的Generate video來的自然許多。免費使用的情境下無法使用字幕(subtitle)以及替換背景功能。使用Generate video產生的影片有口說功能。看哪個比較方便。
+  </h3>
+  <div class="film">
+    <video class="demo text" autoplay loop muted>
+      <source src="./img/kreadoai_aiMotion_ok.mp4"  type="video/mp4">
     </video>
-    <div class="wrapper">
-      <img src="./img/contentforweb.png" alt="主內容圖">
-    </div>
+  </div>
+  <p>（以上為使用AI Motion生成結果。）</p>
+  <img src="./img/step3_1.jpg" style="border: 1px solid rgb(208, 208, 208); width:650px;">
+  <div class="film">
+    <video class="demo text" autoplay loop muted>
+      <source src="./img/kreadoai_bad.mp4"  type="video/mp4">
+    </video>
+  </div>
+  <p>（以上為使用Generate video生成結果。）</p>
+
+  <h3>5.使用AI Motion再經由AE加工後的結果。</h3>
+  <div class="film">
+    <video class="demo text" src="./img/kreadoai_aiMotion_ok_mix.mp4" width="925" controls></video>
+  </div>
+
+  <h3>6.另外有使用<a href="https://www.visionstory.ai/avatar">visionstory</a>以及<a href="https://app.heygen.com/avatars">heygen</a>做測試，在真實人臉的動態生成上不是很優。
+  </h3>
+  <div class="film">
+    <video autoplay loop muted width="300"  >
+      <source src="./img/visionstory_bad.mp4" type="video/mp4">
+    </video>
+    
+  </div>  
+
+  <div class="film">
+    <video class="demo text" autoplay loop muted>
+      <source src="./img/heygen_bad.mp4"  type="video/mp4">
+    </video>
+  </div>
+  
+  <p>（以上的上支影片為使用visionstory，下支為使用heygen。但heygen對於漫畫風的人像產出的結果就蠻真實。）</p>
+  <!-- 生成步驟說明結束 -->
+  
+  <!-- 前言開始 --> 
+ <div class="video m-none">
+  <h3>以上即為AI生成主播的介紹，免費的結果不是很完整，需要在像是AE這樣的軟體再處理字幕以及背景等。接下來來說說使用AI工具：NightCafe製作拉拉熊上稿背景圖的部分。會有這樣的構想是因為，我每次在製作拉拉熊EDM時，背景會花不少時間去找合適的。本次需求為：</h3>
+  <ul class="describe">
+    <li>背景圖的裝飾元素希望能夠在水平932px以外</li>
+    <li>背景圖畫質要夠清楚</li>
+    <li>可以商用</li>
+  </ul>
+  </div>
+  <!-- 前言結束 --> 
+
+  <!-- 步驟說明 -->
+ <h4 id="b">生成步驟</h4>
+  
+ <h3>1.註冊<a href="https://creator.nightcafe.studio/explore">nightcafe</a>後點擊右上方create按鈕，進入生成頁面後在左側欄位中的“TEXT PROMPT”輸入以下段落文字：
+  <br><br>create a <span style="color: red;">game-style illustration</span> with a canvas size of 1920 pixels wide by 2000 pixels tall. 
+
+  <br><br>The middle horizontal section, spanning exactly 932 pixels, must remain completely empty — DO NOT PLACE any characters or objects within this central 932px width. This area should contain only the background, seamlessly blending <span style="color: red;">sky and clouds.</span>
+  
+  <br><br>All characters and objects must be strictly outside the 932px zone. 
+  
+  <br><br>On the left , <span style="color: red;"> a sunglasses is over there. </span>
+  
+  <br><br>On the right side, <span style="color: red;"> a butterfly is over there.</span>
+  
+  <br><br>Detailed painting, fantastical elements, intricate details, fantasy concept art.
+
+  <br><br>（創作一幅遊戲風格的插畫，畫布尺寸為寬 1920 像素，高 2000 像素。中間的水平部分，恰好是 932 像素，必須完全留空 — 請勿在此 932 像素的中央寬度內放置任何角色或物體。此區域應僅包含背景，並與天空和雲朵無縫融合。所有角色和物體必須嚴格位於 932 像素區域之外。左側是一副太陽眼鏡。右側是一隻蝴蝶。細緻的繪畫，奇幻的元素，錯綜複雜的細節，奇幻的概念藝術。）
+
+  <br><br>接著點擊左側欄位最底下的按鈕“Create”,即可看到生成結果。上方的咒語，紅字的部分是可以更改的，更改風格以及想要放置的物件以及背景，背景的部分測試階段鎖定天空跟雲。</h3>
+  <img src="./img/nightcafe_1.png" style="border: 1px solid rgb(208, 208, 208);"><br>
+ 
+ 
+ <h3>2.可以從結果看出，左側有一隻眼鏡，右側有蝴蝶，這就是我想要的，左右都有裝飾，不會出現在中間。以下有更多測試結果可參考。</h3>
+ <img class="demo" src="./img/nightcafe_2.webp" style="border: 1px solid rgb(208, 208, 208);">
+ <p>(將原本輸入game-style illustration的地方改為hyper-realistic illustration，左右物件更換的結果。)</p>
+
+ <img class="demo" src="./img/nightcafe_3.webp" style="border: 1px solid rgb(208, 208, 208);">
+ <p>(將原本輸入game-style illustration的地方改為cartoon-style illustration，左右物件更換的結果。)</p>
+
+ <img class="demo" src="./img/nightcafe_4.webp" style="border: 1px solid rgb(208, 208, 208);">
+ <p>(將原本輸入game-style illustration的地方改為Japanese manga style illustration，左右物件更換的結果。但左右視角不太一樣啊...)</p>
+
+ <h3>3.沒關係，多嘗試一下就好了，總會有可以的。</h3>
+ <img class="demo" src="./img/nightcafe_5.jpg" style="border: 1px solid rgb(208, 208, 208);">
+
+ <h3>4.那當遇到合到edm時，畫面不夠怎麼辦？有些辦法可以解決，像是使用nightcafe的擴圖，可以擴4邊，擴完後覺得左邊太暗，可以增加物件，選擇“Selective Edit”，依據操作提示重新提示。原本我是輸入：add airplane啦..但這結果也很滿意，調整下就完成了。</h3>
+ <img class="demo" src="./img/nightcafe_2_APPLY1.jpg" style="border: 1px solid rgb(208, 208, 208);">
+ <p>(使用資料庫編號dd-148，不曉得哪位做的sorry!原先套的圖左邊明顯不夠。）</p>
+
+ <img class="demo" src="./img/nightcafe_2_APPLY2.jpg" >
+ <p>(使用擴圖expand跟Selective Edit後再微調的結果。）</p>
+
+ <img src="./img/nightcafe_2_APPLY3.png" style="border: 1px solid rgb(208, 208, 208);">
+ <p>(擴圖以及selective edit位置。）</p>
+
+ <h3>5.用這組咒語也可以形成左右對稱的結果，實測是不合預期的情況更多，但有些時候更符合預期。同樣的，都是修改紅色字的地方。咒語如下：<br><br>
+  Create a <span style="color: red;">japanese manga style illustration</span> with a canvas size of 1920 pixels wide by 2000 pixels tall.<br><br> 
+  
+  The middle horizontal section, spanning exactly 932 pixels, must remain completely empty, <br><br> 
+  DO NOT PLACE any objects or characters within the central 932px widthcontaining only the background with a seamless blend of <span style="color: red;">sky and clouds,</span><br><br>  
+  
+  ensuring no objects or characters appear in this area. Outside this 932px zone, <br><br> 
+  
+  A perfectly symmetrical layout: <span style="color: red;">animals</span> on the left, a <span style="color: red;">zoom</span> on the right,<br><br> 
+  
+  leaving the central part as an <span style="color: red;">empty sky.</span><br><br> 
+  
+  All characters and objects should be placed strictly in the left or right sections of th e canvas,<br><br> 
+  
+  Place all objects and characters strictly outside the central 932px widt. <br><br> 
+  
+  The composition should maintain a balanced layout while respecting these spatial constraints. <br><br> 
+  
+  Detailed painting, fantastical, intricate detail, fantasy concept art. <br><br> 
+
+  （創建一幅日式漫畫風格的插圖，畫布尺寸為寬 1920 像素，高 2000 像素。中間的水平部分，恰好 932 像素，必須保持完全空白。請勿在中央 932px 寬度內放置任何物體或字符，僅包含背景，天空和雲彩無縫融合，確保此區域內沒有物體或字符。在此 932px 區域之外，完美對稱的佈局：左側是動物，右側是縮放，中央部分留空天空。所有角色和物體都應嚴格放置在畫布的左側或右側部分。將所有物件和角色嚴格放置在中央 932px 寬度之外。構圖應保持平衡佈局，同時尊重這些空間限制。細緻的繪畫，奇幻的，複雜的細節，奇幻概念藝術。）
+</h3>
+<img class="demo" src="./img/nightcafe_other_1.jpg" style="border: 1px solid rgb(208, 208, 208);">
+ <p>(左上跟左下有符合左右對稱，中間區域沒有物件。）</p>
+
+ <img class="demo" src="./img/nightcafe_other_2.jpg" style="border: 1px solid rgb(208, 208, 208);">
+ <p>(左上跟左下有符合左右對稱，中間區域沒有物件。修改背景為sea(海) ; 左右側個別為動物以及動物園 ; 遊戲風格。）</p>
+
+ <img src="./img/nightcafe_other_2_mix.jpg" style="border: 1px solid rgb(208, 208, 208);">
+ <p>(使用該咒語生成右下角背景圖，跟資料庫的dee-101合圖結果。）</p>
+
+ <video autoplay loop muted width="925">
+  <source src="./img/Comp_1_whole_high.webm" type="video/webm">
+</video>
+ <p>(背景圖使用AE加工，輸出成mp4再轉檔為webm的結果，mp4檔案大小為7.5mb，轉為webm檔案大小為1.5mb，<a href="https://drive.google.com/drive/u/0/folders/1H_vifr2CLO8aj21Sr-L2XWHo513BxEmc">簡易說明轉檔流程文件在此</a> ; <a href="https://quentinlinlin.github.io/own/aicombinedeta/index.html">html demo檔在此</a>。）</p>
+
+ <img src="./img/nightcafe_other_1_mix.jpg" style="border: 1px solid rgb(208, 208, 208);">
+ <p>(用該咒語替換紅字部分再使用chat-gpt所生成的背景圖，跟資料庫的gg-23合圖結果。）</p>
+
+ <h3>6.最後奉上原先構想結合現有edm資料庫的結晶。咒語如下：<br><br>
+  create a game-style illustration with a canvas size of 1920 pixels wide by 2000 pixels tall. <br><br>
+
+  floating wooden spiral staircase is perfectly centered both horizontally and vertically in the scene. The staircase has a natural wood texture, with visible grain patterns and a warm, slightly aged appearance. It appears to be suspended in midair, surrounded by a vast sky filled with grand, detailed clouds.<br><br>
+  
+  The middle horizontal section, spanning exactly 932 pixels, must remain completely empty—DO NOT PLACE any characters or objects within this central 932px width. This area should contain only the background, seamlessly blending sky and clouds.<br><br>
+  
+  All characters and objects must be positioned  on the wooden spiral staircase, strictly outside the 932px zone. They should be standing, sitting, or interacting with the steps in a natural way.<br><br>
+  
+  On the left side of the staircase, a modern man is floating with VR glasses, his feet firmly planted on the steps. A pink scarf drapes over one of the railings or floats gently in the air nearby.<br><br>
+  
+  On the right side of the staircase, a small hedgehog and an arcade game are positioned securely on the wooden steps. The arcade game appears anchored, and the hedgehog interacts with the environment in a natural way.<br><br>
+  
+  The staircase should seamlessly integrate into the vast sky, creating an immersive and fantastical atmosphere.<br><br>
+  
+  Detailed painting, fantastical elements, intricate details, fantasy concept art.<br><br>
+
+  使用寬 1920 像素、高 2000 像素的畫布尺寸創建一幅遊戲風格的插畫。<br><br>
+
+  懸浮的木質螺旋樓梯在場景中水平和垂直方向均完美居中。樓梯擁有天然的木質紋理，紋理清晰可見，外觀溫暖而略帶歲月的韻味。它彷彿懸浮在半空中，周圍是廣闊的天空，天空中點綴著恢弘細膩的雲彩。<br><br>
+  
+  中間的水平區域恰好是 932 像素，必須完全留空——請勿在此 932 像素的中央寬度內放置任何角色或物體。該區域應僅包含背景，並將天空和雲彩無縫融合。<br><br>
+  
+  所有角色和物體必須放置在木質螺旋樓梯上，嚴格位於 932 像素區域之外。他們應該以自然的方式站立、坐著或與台階互動。<br><br>
+  
+  在樓梯左側，一位戴著 VR 眼鏡的現代男士漂浮在空中，雙腳穩穩地踩在台階上。一條粉紅色圍巾搭在欄桿上，或輕輕飄浮在附近的空中。<br><br>
+  
+  樓梯右側，一隻小刺蝟和一台電子遊戲穩穩地安放在木質台階上。電子遊戲彷彿被穩穩地固定住，而刺蝟則以自然的方式與環境互動。<br><br>
+  
+  樓梯與浩瀚的天空渾然一體，營造出沉浸式的奇幻氛圍。<br><br>
+  
+  細緻的繪畫，奇幻的元素，精妙的細節，奇幻的概念藝術。<br><br>
+
+
+ </h3>
+ <img src="./img/nightcafe_2_APPLY4.jpg" style="border: 1px solid rgb(208, 208, 208);">
+ <p>(背景：nightcafe生成再加以去被合成 ; 前景：資料庫dd-230局部＋hh-69局部+ee-61局部）</p>
+
+ <img class="demo" src="./img/nightcafe_2_APPLY5.png" style="border: 1px solid rgb(208, 208, 208);">
+ <p>(使用了以上生成的局部來使用。）</p>
+ <!-- 步驟說明結束 -->
+
+  
+
+  </div>  
   </div>
 </body>
 </html>
