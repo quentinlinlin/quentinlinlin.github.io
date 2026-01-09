@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/x-icon.ico" type="image/x-icon"/>
+    <base target="_blank">
+    <title>AI生成卡通風格人像 / 短影片</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+
+</head>
+<body>
+  <div class="whole">
+    <div class="anounce m-none">本回使用的AI生成，僅使用於春酒現場效果使用，若習得此技，欲商用，請詳讀各家AI生成使用規範喔！</div>  
+    <div class="top m-none"><a href="" target="_self">回到頭</a></div>  
+  <div class="wrapper">
+    
+  <!-- 文章大標以及前言開始 -->
+
+    <h1>AI生成卡通風格人像 <span>/</span> 短影片 <span>/</span> 口白 </h1>
+    <div class="m-none">
+    <h2>以製作2024年春酒視覺製作物的經驗來說喔！先說AI生成卡通風格人像的部分，本次需求為：</h2>
+    <ul class="describe">
+      <li>需要將人物肖像轉為卡通風格，放在1920x1080px，150dpi的畫布裡，每一張192x1080需要塞5-6個人。</li>
+      <li>不能離本人真實肖像差太多，所以要生成的肖像本身畫質不能太低，以免AI取樣的真實性會降低。</li>
+    </ul>
+    <h3>於是survey了以下這幾個，沒有查找app的，因為手痛滑手機會痛痛的關係。最後以<span> dreamina </span>的產出結果為最符合需求的。以下為比較表，因為有明確的目的：卡通風格，加上準備時間並非很充裕，沒有好好深入的了解各家在生成上的眉角，所以沒有使用不代表它不好歐！(免責聲明XD)</h3>
+    
+    <h3>若不想看很多很多字，直接進入操作步驟吧！</h3>
+    </div>
+    <ul class="short">
+      <li><a href="#a" target="_self">Dreamina生成卡通人像步驟</a></li>
+      <li><a href="#b" target="_self">Lumalabs生成短影片步驟</a></li>
+      <li><a href="#c" target="_self">run way生成短影片步驟</a></li>
+    </ul>
+    
+    <h4 class="m-none">AI 生成卡通風格人像各家小小的比較</h4>
+ 
+
+  <!-- 文章大標以及前言結束 -->
+
+  <!-- 第一個漫畫風表格 -->
+    <table class="order m-none">
+    <tr>
+      <th class="m_none" width="5%">網站</th>
+      <th class="special" width="21%"><img src="./img/crown-blue.svg">dreamina</th>
+      <th  width="18%">FlexClip</th>
+      <th  width="18%">aiease</th>
+      <th  width="21%">vidnoz</th>
+    </tr>
+
+    <tr>
+      <td class="m_none">費用</td>
+      <td class="spec">目前免費</td>
+      <td>免費生成4張</td>
+      <td>免費生成，需排隊等待</td>
+      <td>免費<br>（僅試幾張，免費限制生成次數&是否需要排隊不知）</td>
+    </tr>
+
+    <tr>
+      <td class="m_none">網址</td>
+      <td class="spec"><a href="https://dreamina.capcut.com/ai-tool/home">點我</a></td>
+      <td><a href="https://www.flexclip.com/tw/ai/image-to-image/">點我</a></td>
+      <td><a href="https://www.aiease.ai/app/apply-ai-filters">點我</a></td>
+      <td><a href="https://tw.vidnoz.com/ai-cartoon-generator.html">點我</a></td>
+    </tr>
+
+    <tr>
+      <td class="m_none">描述</td>
+      <td class="spec">
+        <ul>
+        <li>目前免費無限制生成次數</li>
+        <li>輸出像素高，符合製圖需求</li>
+        <li>生成結果逼真</li>
+        <li>有時候因為指令不夠具體還怎樣 生成的的結果不如預期</li>
+      </ul>
+      </td>
+
+      <td>
+        <ul>
+        <li>生成結果離真實面目遙遠</li>
+      </ul>
+      </td>
+
+      <td>
+        <ul>
+        <li>生成結果離真實面目遙遠</li>
+      </ul>
+      </td>
+     
+      <td>
+        <ul>
+        <li>生成結果離真實面目<span>非常遙遠</span></li>
+      </ul>
+      </td>
+    </tr>
+  </table>
+  <!-- 第一個漫畫風表格結束 -->
+
+  <!-- 第二個漫畫風表格開始 -->
+  <table class="order  m-none">
+    <tr>
+      <th class="m_none" width="5%">網站</th>
+      <th  width="18%">imglarger</th>
+      <th  width="18%">capcut</th>
+      <th  width="18%">myedit</th>
+    </tr>
+
+    <tr>
+      <td class="m_none">費用</td>
+      <td>免費<br>（僅試幾張，免費限制生成次數&是否需要排隊不知）</td>
+      <td>免費<br>（僅試幾張，免費限制生成次數&是否需要排隊不知）</td>
+      <td>免費生成幾張後需要購買，每日登入可獲得3點數</td>
+    </tr>
+
+    <tr>
+      <td class="m_none">網址</td>
+      <td ><a href="https://imglarger.com/cartoonizer">點我</a></td>
+      <td><a href="https://www.capcut.com/magic-tools/stylize-photo?enter_from=picture_%E5%85%8D%E8%B2%BBAI%E5%8D%A1%E9%80%9A%E7%94%9F%E6%88%90%E5%99%A8&position=%E5%85%8D%E8%B2%BBAI%E5%8D%A1%E9%80%9A%E7%94%9F%E6%88%90%E5%99%A8&article_title=Free+AI+Cartoon+Generator&article_type=tools&__action_from=picture_%E5%85%8D%E8%B2%BBAI%E5%8D%A1%E9%80%9A%E7%94%9F%E6%88%90%E5%99%A8&from_page=article_page/">點我</a></td>
+      <td><a href="https://myedit.online/tw/photo-editor/image-cartoonize">點我</a></td>
+    </tr>
+
+    <tr>
+      <td class="m_none">描述</td>
+      <td>
+        <ul>
+        <li>生成結果離真實面目<span>非常遙遠</span></li>
+      </ul>
+      </td>
+
+      <td>
+        <ul>
+        <li>生成結果逼真，但構圖線條太少，需要自行補上幾條</li>
+      </ul>
+      </td>
+
+      <td>
+        <ul>
+        <li>生成結果離真實面目<span>非常遙遠</span></li>
+      </ul>
+      </td>
+    </tr>
+  </table>
+  <!-- 第二個漫畫風表格結束 -->
+
+  <!-- 靜態圖生成步驟說明開始 -->
+  <h3 class="m-none">確定使用<span> dreamina </span>來生成後，以下為生成步驟：</h3>
+
+  <h4 id="a">Dreamina 生成卡通風格人像步驟</h4>
+  
+  <h3>1.在<a href="https://www.krea.ai/apps/image/enhancer">KREA</a>上傳人像圖片，生成指令(有時候會生不出來，我會用<a href="https://myedit.online/tw/photo-editor/image-to-prompt/edit">my edit</a> or <a href="https://chatgpt.com/c/6768d2aa-0988-8004-976e-9b6b30c588dc">chat-gpt</a>替代)</h3>
+  <img src="./img/prompt.jpg">
+  <p>（在右側上傳圖像後，在藍色框框區所標示，會自動生成指令，拷貝指令。借用日本演員岡田將生來示範）</p>
+
+  <h3>2.進去<a href="https://www.google.com/search?q=%E4%B8%AD%E8%8B%B1%E7%BF%BB%E8%AD%AF&oq=%E4%B8%AD%E8%8B%B1%E7%BF%BB%E8%AD%AF&gs_lcrp=EgZjaHJvbWUqCQgAEEUYOxiABDIJCAAQRRg7GIAEMgcIARAAGIAEMgcIAhAAGIAEMgcIAxAAGIAEMgcIBBAAGIAEMgcIBRAAGIAEMgcIBhAAGIAEMgcIBxAAGIAEMgcICBAAGIAEMgcICRAAGIAE0gEIMjIxN2owajeoAgCwAgA&sourceid=chrome&ie=UTF-8">google 中英翻譯</a>，貼上指令，刪除非必要指令，以我生成的經驗來說，非必要的指令會產生非預期的結果。</h3>
+  <img class="demo" src="./img/transitoin.png" style="text-align: center; margin: 0 auto;">
+  <p>（非必要的指令為：背景是純黃色。生成的目的為產生卡通人像，背景AI會自動重新生成，這句話不是必要的。）</p>
+
+  <h3>3.在<a href="https://dreamina.capcut.com/ai-tool/image/generate">dreamina</a>，貼上剛剛有刪減後的英文指令，並加上“Create a highly realistic cartoon-style portrait of a male based entirely on the given photo, with a vivid and lifelike representation in a detailed and polished art style.”（
+    完全根據給定的照片創建高度逼真的卡通風格的男性肖像，以細緻精美的藝術風格呈現生動逼真的表現。）這段是指定要生成卡通風格，並且要依據照片原型去生成，以及產出結果要是原本的性別。為了要生成出來的風格一致，皆選擇了模型Imgage 2.1 ; 為了符合在排版畫面上的需求，所以選取比例2:3 ; 為了要與實際肖像不要落差太大，選擇參考影像中的臉部。</h3>
+  <img src="./img/result.png">
+  <p>（上排為品質5,下排為品質10,可自行玩玩看比較一下，可以看出細膩程度有差異。）</p>
+
+  <h3>4.下載任一張結果，以原圖720×1079,221KB來說，下載的圖樣是100多KB，可選擇HD會增強畫質，下載的圖樣變成3.1MB。
+    <br>可選擇“局部重繪”，這次將領帶選取，改成迪士尼米奇的圖樣，提示語為：“the tie's pattern change to micky mouse, the charactor of Walt Disney's animated carttons.”總會出來比較接近想要的。
+    <br>選擇”在畫布上編輯“的話，可以去背。
+    <br>選擇“移除"的話“，可以將不想要的元素移除。
+    <br>選擇“展開”的話，可以延伸背景。
+  </h3>
+  <img src="./img/extend.png">
+  <p>（點擊圖樣，右下方有許多調整功能可以使用。）</p>
+  <img src="./img/micky.png">
+  <p>（上排為提示語未描述要改變領帶上的圖樣，下排增加了指令改變領帶上的圖樣"the tie's pattern change to..."。最右邊那張我可以了。）</p>
+  <img src="./img/expandbk.png">
+  <p>（選擇“展開”背景會延伸。）</p>
+
+  <h3>5.若要使用上面的圖任何一張來做其他動作的延伸，並且生成結果的長相風格不偏離原本指定的圖太多，以下圖為例，要將原本站著的動作改為唱歌拿麥克風的動作，可以先將下圖放到Krea產生這張圖的生成提示詞：
+    <br>“The image is a digital illustration of a well-dressed person wearing a blue suit, white dress shirt, and a colorful tie featuring Mickey Mouse and other characters. The person has a neat hairstyle and is standing in a doorway.”(
+      該圖像是一個穿著考究的人的數位插圖，穿著藍色西裝、白色禮服襯衫和帶有米老鼠和其他角色的彩色領帶。那人髮型整齊，站在門口。)
+  </h3>
+  <img src="./img/seed1.jpeg" class="demo">
+
+  <h3>6.拷貝從KREA生成的提示詞，貼到Google的中英翻譯做調整，刪除掉不要的。</h3>
+  <img src="./img/seed2.png" class="demo" >
+  <p>（紅色線是已刪除的，非必要的描述。person我會改為“man”，為了在接下來的生成指令一致。）</p>
+
+  <h3>7.到Chat-Gpt選用下一個主題“Lumalabs生成短影片步驟”的第1步驟，打上"/手持麥克風的歌手"，若不清楚我在講啥，請看完本篇文章再回頭這一部分。</h3>
+  <img src="./img/seed3.png"  style="border: 1px solid rgb(208, 208, 208);">
+  <p></p>
+
+  <h3>8.拷貝從Chat-Gpt生成的提示詞，貼到Google的中英翻譯做調整，刪除掉不要的。</h3>
+  <img src="./img/seed4.png" class="demo" style="border: 1px solid rgb(208, 208, 208);">
+  <p>（紅色線是已刪除的，非必要的描述。singer我會改為“man”，為了在接下來的生成指令一致。）</p>
+
+  <h3>9.提示語的部分，在最後一段，加上原先為了確定產出的畫面是完全取決於原始的圖，加上“Create a highly realistic cartoon-style portrait of a male based entirely on the given photo, with a vivid and lifelike representation in a detailed and polished art style.”（
+    完全根據給定的照片創建高度逼真的卡通風格的男性肖像，以細緻精美的藝術風格呈現生動逼真的表現。）”
+    <br>接著就可以去Dreamina生成囉！參考圖象選擇臉部，模型選擇2.1，品質拉到10，尺寸維持2:3
+  </h3>
+  <img src="./img/seed5.png">
+
+  <h3>10.產出的結果，在領帶上呈現米奇的效果不是很好，拿掉關於米奇領帶的提示，重新生成，結果可以接受了。</h3>
+  <img src="./img/seed6.png">
+  <!-- 靜態圖生成步驟說明結束 -->
+  
+  <!-- 影片生成前言開始 --> 
+ <div class="video m-none">
+  <h3>以上即為AI生成卡通風格人像的介紹，接下來來說說製作短影片的部分。同樣的，依然花了不少時間在尋找合適的，本次需求為：</h3>
+  <ul class="describe">
+    <li>需要將影片放到1920x1080的畫布裡，但通常免費的影片會有浮水印產生，所以生成選擇若有4:3就選擇4:3，可以蓋住在邊角的浮水印。</li>
+    <li>畫素不能太低，放到實際會場的LCD畫面會不清楚。</li>
+  </ul>
+  <p>*很悲傷的是，最後AI生成影片並沒有被使用到..இдஇ</p>
+
+  <h4>AI 生成短影片各家小小的比較</h4>
+  </div>
+  <!-- 影片生成前言結束 --> 
+
+  <!-- 第一個影音表格 -->
+  <table class="order comp m-none">
+    <tr>
+      <th class="m_none" width="8%">網站</th>
+      <th class="special" width="47%"><img src="./img/crown-blue.svg">viva</th>
+      <th class="special" width="47%"><img src="./img/crown-blue.svg">runway</th>
+    </tr>
+
+    <tr>
+      <td class="m_none">費用</td>
+      <td class="spec">一個月免費生成3支，<br>可以切換其他帳號再使用，<br>下個月免費額度會重啟。</td>
+      <td class="spec">一個月提供125點數，約生成3支左右用完，<br>可以切換其他帳號再使用，<br>下個月免費額度會重啟。</td>
+    </tr>
+
+    <tr>
+      <td class="m_none">網址</td>
+      <td class="spec"><a href="https://vivago.ai/video-generation">點我</a></td>
+      <td class="spec"><a href="https://app.runwayml.com/video-tools/">點我</a></td>
+    </tr>
+
+    <tr>
+      <td class="m_none">描述</td>
+      <td class="spec">
+        <ul>
+        <li>生成結果在預期內</li>
+        <li>輸出像素高，符合製作需求</li>
+        <li>畫面精緻</li>
+        <li>有劇情轉折的腳本生成結果不佳<br>（或者是因為我還沒參透）</li>
+      </ul>
+      </td>
+
+      <td class="spec">
+        <ul>
+        <li>生成結果在預期內</li>
+        <li>輸出像素高，符合製作需求</li>
+        <li>畫面可接受</li>
+        <li>有分鏡的生成結果不錯</li>
+      </ul>
+      </td> 
+    </tr>
+
+    <tr>
+      <td class="m_none">生成<br>演示</td>
+      <td class="spec comfortable"><video src="./img/viva.mp4" width="400" controls></video></td>
+      <td class="spec comfortable"><video src="./img/runway.mp4" width="400" controls></video></td>
+    </tr>
+    
+  </table>
+  <!-- 第一個影音表格結束 -->
+  
+  <!-- 第二個影音表格 -->
+  <table class="order comp m-none">
+    <tr>
+      <th class="m_none" width="8%">網站</th>
+      <th  class="special" width="47%"><img src="./img/crown-blue.svg">lumalabs</th>
+      <th  class="special" width="47%"><img src="./img/crown-blue.svg">genmo</th>
+    </tr>
+
+    <tr>
+      <td class="m_none">費用</td>
+      <td class="spec">一個月限制生成20次，用完要等下個月，<br>可以切換帳號再用，<br>下個月免費額度會重啟。<br>（網路是寫30次，但我生20次就不能再生了。哭。）</td>
+      <td class="spec">一個月限制生成約6支影片，用完要等下個月，<br>可以切換帳號再用，<br>下個月免費額度會重啟。</td>
+    </tr>
+
+    <tr>
+      <td class="m_none">網址</td>
+      <td class="spec"><a href="https://dream-machine.lumalabs.ai/">點我</a></td>
+      <td class="spec"><a href="https://www.genmo.ai/">點我</a></td>
+    </tr>
+
+    <tr>
+      <td class="m_none">描述</td>
+
+      <td class="spec">
+        <ul>
+          <li >生成結果在預期內</li>
+          <li>輸出像素高，符合製作需求</li>
+          <li>畫面非常精緻</li>
+          <li>有時候生成結果有些破綻 看久會害怕</li>
+        </ul>
+      </td>
+      <td  class="spec">
+        <ul>
+          <li >生成結果在預期內</li>
+          <li>輸出像素高，符合製作需求</li>
+          <li>畫面精緻</li>
+          <li>有時候生成結果有些破綻 看久會害怕</li>
+      </ul>
+      </td>
+
+
+    </tr>
+
+    <tr>
+      <td class="m_none">生成<br>演示</td>
+    
+      <td class="spec"><video src="./img/luma.mp4" width="400" controls></video></td>
+
+      <td class="spec"><video src="./img/genmo.mp4" width="400" controls></video></td>
+    </tr>
+    
+  </table>
+  <!-- 第二個影音表格結束 -->
+
+  
+
+
+  <h3 class="m-none">發現viva、lumalabs、genmo適合沒有劇情轉折的影片生成，而runway適合做有分鏡的影片生成。以下以<span> lumalabs & runway </span>來說明生成步驟：</h3>
+
+  <!-- Luma生成影片步驟說明 -->
+ <h4 id="b">Lumalabs生成短影片步驟</h4>
+  
+ <h3>1.在<a href="https://chatgpt.com/c/6768d2aa-0988-8004-976e-9b6b30c588dc">chat-gpt</a>輸入以下段落文字：<br><br>我正在使用一個名為Luma Dream Machine 的影像繪圖工具。我指定你成為Luma Dream Machine的提示生成器。
+  接著我會在想要生成的主題前添加斜線（/）。你將在不同情況下用英文生成合適的提示。例如，如果我輸入 /一位女性走在東京街頭，你將生成prompt "A stylish woman walks down a Tokyo street filled with warm glowing neon and animated city signage. She wears a black leather jacket, a long red dress, and black boots, and carries a black purse. She wears sunglasses and red lipstick. She walks confidently and casually. The street is damp and reflective, creating a mirror effect of the colorful lights. Many pedestrians walk about."</h3>
+ <img src="./img/chat-gpt.png" style="border: 1px solid rgb(208, 208, 208);">
+ <p>（此為觀看<a href="https://www.youtube.com/watch?v=LtOa_uCcEF4">此視屏教學</a>）所獲得的珍貴咒語。</p>
+
+ <h3>2.當時有一腳本是“一個困惑的人”，直接輸入中文，Chat-Gpt桑即會生成出英文咒語，要微調可以繼續修改。</h3>
+ <img src="./img/confuse.png" style="border: 1px solid rgb(208, 208, 208);"><br><br><br>
+
+ <h3>3.產出的第一組四張圖，場景昏暗，想要改成明亮的，就調整咒語並且重新生成，生成出來的第二組四張圖，選中一張後點擊“More Like this”，得到了第三組，選其中一個做影片，要做影片點擊"Ｍake Video"，結束。</h3>
+ <img src="./img/lumarprocessing.png">
+ <p>(第一組產出結果，太昏暗，在Chat-gpt上調整咒語。)</p>
+
+ <img src="./img/lumarprocessing2.png">
+ <p>(第二組產出結果，決定要使用左下圖繼續衍生。在左下圖點擊“more like this”。）</p>
+
+ <img src="./img/lumarprocessing3.png">
+ <p>(第三組產出結果，決定要使用右下圖產生影片。在右下圖點擊“make video”。）</p>
+
+ <img src="./img/lumarprocessing4.png">
+ <p>(已產出2個，若想要看更多，會花掉免費點數，可點擊“show more”。）</p>
+ <!-- Luma生成影片步驟說明結束 -->
+
+  <!-- runway生成影片步驟說明開始 -->
+ <h4 id="c">runway生成短影片步驟</h4>
+  
+ <h3>1.在<a href="https://app.runwayml.com/video-tools/teams/foodarthappyyeah/dashboard">run way</a>左側面板選擇3張圖（要1張也行），接著在選擇圖片的下方對於每一張圖輸入提示語：<br>
+  picture 1 : ask questions full of doubts.<br>
+  picture 2 : the woman say no.<br>
+  picture 3 : the man smile.<br>
+  使用的模型是Gen-3 Alpha Turbo 可以上傳3張圖，若選擇Gen-2則是單一圖。如下圖左下藍框選取處。
+  </h3>
+ <img src="./img/runwaystart.jpg">
+ <p>（登入後，點選左下角“Generate Video”）</p>
+ <img src="./img/originalpic3.png" style="border: 1px solid rgb(208, 208, 208);">
+ <p>（準備好靜態圖3張。）</p>
+ <img src="./img/runwayselect3pic.png">
+ <p>（左下角選擇模型，本次示範使用Gen-3 Alpha Turbo ; 左上角最多可放3張圖。）</p>
+ <div class="film">
+ <video src="./img/runwayfault.mp4" width="925" controls></video>
+ </div>
+ 
+ <h3>2.第一回生成的影片，第一卡有不想要的東東，以及第三卡人物的右手怪怪的，修改提示語，重新生成：<br>
+  picture 1 : ask questions full of doubts,<span style="color:red;"> only one person there.</span><br>
+  結果總算可以接受。</h3>
+  <div class="film">
+  <video src="./img/runway.mp4" width="925" controls></video>
+  </div>
+
+  <h3>3.若是要使用從Dreamina生成的靜態圖，轉為動態圖，Lumalabs 跟 runway 相較，runway在模型Gen-3 Alpha Turbo的表現較優。</h3>
+
+    <img src="./img/statictoanimate.jpeg" class="demo">
+    <p >（選擇使用這張來生成動態。）</p>
+    <div class="film">
+    <video class="demo text" src="./img/Gen-3.mp4" width="925" controls></video>
+    </div>
+    <p >（生成提示詞為：singing! 使用runway Gen-3的結果較優。）</p>
+
+    <div class="film">
+      <video class="demo text" src="./img/lumalabs.mp4" width="925" controls></video>
+      </div>
+      <p >（生成提示詞為：singing! 使用luma的結果..。）</p>
+  <!-- runway生成影片步驟說明結束 -->
+
+  </div>  
+  </div>
+</body>
+</html>
